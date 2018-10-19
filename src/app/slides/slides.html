@@ -1,19 +1,8 @@
 <!--
-  Generated template for the SlidesPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
+  Created By: Pradeepa.
+  Dated On: 17-02-2018.
 -->
-<!-- <ion-header>
-
-  <ion-navbar>
-    <ion-title>slides</ion-title>
-  </ion-navbar>
-
-</ion-header> -->
-
-
-<ion-content no-bounce style="background-color: #e7f2f1;">
+<ion-content no-bounce style="background-color: #fafafa;">
 	<ion-slides pager="true" dir="{{dir}}" style="height:65%">
 		<ion-slide>
 			<img src="assets/imgs/Intro_01@1x.png">
@@ -37,14 +26,23 @@
 		</ion-slide>
 	</ion-slides>
 
-	<!-- <button ion-button (click)=loginWithFb()>Login with Facebook</button>
-	<button ion-button (click)=googleLogin()>Login with google</button> -->
-	
-	<!-- <div class="facebook"><img  src="assets/imgs/gmail.png"></div> -->	
-	<div style="display: inline-flex;height:15%" (click)=loginWithFb()>
+	<div class="custom-fb-button" (click)="loginWithFb()">
+		<!-- <img src="assets/imgs/facebook-large.png"> -->
+		<span>Continue with Facebook</span>
+	</div>
+	<div class="custom-gmail-button" (click)="googleLogin()">
+		<!-- <img src="assets/imgs/google-large.png"> -->
+		<span>Continue with Google</span>
+	</div>
+	<div class="custom-mail-button" (click)="loginWithEmail()">
+		<span>Sign In to Email</span>
+	</div>
+	<button full clear ion-button class="custom-account">Create a new account</button>
+
+	<!-- <div style="display: inline-flex;height:15%">
 		 <img src="assets/imgs/facebook-large.png">
 	</div>
-	<div style="display: inline-flex;height: 8%;padding-left: 6%;padding-right: 6%;" (click)=loginWithFb()>
+	<div style="display: inline-flex;height: 8%;padding-left: 6%;padding-right: 6%;">
 		 <img src="assets/imgs/google-large.png">
-	</div>
+	</div> -->
 </ion-content>

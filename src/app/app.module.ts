@@ -2,11 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
+// Pages
 import { MyApp } from './app.component';
-//import { HomePage } from '../pages/home/home';
+import { HomePage } from '../pages/home/home';
 //import { ListPage } from '../pages/list/list';
 //import { EditprofilePage } from '../pages/editprofile/editprofile';
 import { SlidesPage } from './slides/slides';
+import { RecoverypasswordPage } from '../pages/recoverypassword/recoverypassword';
+import { RecoverypasswordOtpPage } from '../pages/recoverypassword-otp/recoverypassword-otp';
+import { RegistrationPage } from '../pages/registration/registration';
 //import { WelcomePage } from '../pages/welcome/welcome';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,8 +34,12 @@ firebase.initializeApp(firebaseConfig);
 
 @NgModule({
   declarations: [
-    MyApp,SlidesPage
-
+    MyApp,
+    SlidesPage,
+    HomePage,
+    RecoverypasswordPage,
+    RecoverypasswordOtpPage,
+    RegistrationPage
   ],
   imports: [
     BrowserModule,
@@ -48,7 +56,12 @@ firebase.initializeApp(firebaseConfig);
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,SlidesPage
+    MyApp,
+    SlidesPage,
+    HomePage,
+    RecoverypasswordPage,
+    RecoverypasswordOtpPage,
+    RegistrationPage
   ],
   providers: [
     StatusBar,

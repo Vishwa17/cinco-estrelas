@@ -5,6 +5,8 @@ import { AngularFireAuth } from 'angularfire2/auth';
 import { Observable } from 'rxjs/Observable';
 import { GooglePlus } from '@ionic-native/google-plus';
 import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook';
+import { HomePage } from '../../pages/home/home';
+
 
 //import { TranslateModule } from '@ngx-translate/core';
 
@@ -80,6 +82,13 @@ export class SlidesPage {
       console.log(error);
     });
   }
+
+  // This method is used for navigating to home page for login with Email
+  loginWithEmail(){
+    this.navCtrl.push(HomePage);
+  }
+
+  
   //  googleLogin(){
   //   this.gplus.login({
   //     'webClientId':'140635668585-42ph815ot6sg8b5frdbpnvo5vnu7bdmi.apps.googleusercontent.com',
