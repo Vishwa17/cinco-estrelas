@@ -10,6 +10,7 @@ import { HomePage } from '../pages/home/home';
 import { SlidesPage } from './slides/slides';
 import { RecoverypasswordPage } from '../pages/recoverypassword/recoverypassword';
 import { RecoverypasswordOtpPage } from '../pages/recoverypassword-otp/recoverypassword-otp';
+import { RecoverynewpasswordPage } from '../pages/recoverynewpassword/recoverynewpassword';
 import { RegistrationPage } from '../pages/registration/registration';
 //import { WelcomePage } from '../pages/welcome/welcome';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -39,6 +40,7 @@ firebase.initializeApp(firebaseConfig);
     HomePage,
     RecoverypasswordPage,
     RecoverypasswordOtpPage,
+    RecoverynewpasswordPage,
     RegistrationPage
   ],
   imports: [
@@ -61,6 +63,7 @@ firebase.initializeApp(firebaseConfig);
     HomePage,
     RecoverypasswordPage,
     RecoverypasswordOtpPage,
+    RecoverynewpasswordPage,
     RegistrationPage
   ],
   providers: [

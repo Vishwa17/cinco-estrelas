@@ -1,10 +1,29 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title >Iniciar Sessão</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-      <button ion-button clear full (click)="loadRecoveryPassword()">Password Recovery</button>
-      <button ion-button clear full (click)="loadRegister()">Registration</button>
+	  <h6>Entre com a sua conta 5 Estrelas</h6>
+	  <form [formGroup]="credentialsForm">
+	  	
+	  	<ion-item class="itemCss spaceCss">
+		    <ion-label class="labelCls">EMAIL</ion-label>
+		    <ion-input [formControl]="credentialsForm.controls['email']"  class="inputBorder" clearInput></ion-input>
+		</ion-item>
+	  	<ion-item class="itemCss" style="padding-bottom: 5%">
+		    <ion-label class="labelCls">SENHA</ion-label>
+		   
+		    <ion-input type="password" [formControl]="credentialsForm.controls['password']"  class="inputBorder" ></ion-input>
+		</ion-item>
+		<div style="display:inline-flex;padding-bottom: 30px;">
+		    <ion-toggle color="green"></ion-toggle>
+		    <ion-label>Lembrar os meus dados</ion-label>
+		</div>
+	  	<button ion-button full class="custom-button" (click)="submitEmail()">INICIAR SESSÃO</button>
+	  </form>
+	  <button ion-button clear full (click)="loadRecoveryPassword()">Esqueceu-se da senha?</button>
+      <!-- <button ion-button clear full (click)="loadRecoveryPassword()">Password Recovery</button>
+      <button ion-button clear full (click)="loadRegister()">Registration</button> -->
 </ion-content>

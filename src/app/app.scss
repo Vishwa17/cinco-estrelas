@@ -14,3 +14,28 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+// Custom Loader
+.custom-loader{
+    background: rgba(35, 183, 149, 0.34);
+    .loading-wrapper{
+        background: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+}
+
+
+// Custom Alert Box
+.custom-alertBox{
+    background: rgba(35, 183, 149, 0.34);
+    .alert-wrapper{
+        background-color: #eeeeee;
+    }
+    .alert-button-group{
+        background: #188068;
+    }
+    .alert-button{
+        color: white;
+    }
+}
