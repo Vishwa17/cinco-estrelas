@@ -1,5 +1,4 @@
-page-recoverypassword {
-
+page-register-otp {
     .toolbar-background-md {
         background: #ffffff !important;
     }
@@ -19,30 +18,21 @@ page-recoverypassword {
         font-size: 16px;
     }
     .custom-input{
-        border: 2px solid #096d5e !important;
+        border: 2px solid #23b795 !important;
         border-radius: 5px;
         padding: 0px 10px;
-        margin: 20px 0px 20px 0px;
+        margin: 20px 0px 5px 0px;
     }
-    .custom-input ion-label{
-        display: inline-flex;
-        border-right: 2px solid #096d5e;
-        margin: 0px;
-        padding: 13.5px 10px 10px 0px;
-        color: #096d5e;
-        font-size: 12px;
-        text-transform: uppercase;
-    }
+    
     .custom-input input{
         height: 40px;
-        width: 80%;
+        width: 100%;
         border: none;
         padding-left: 10px;
         font-size: 16px;
     }
 
     .item-inner {
-        padding-right: 8px;
         border-bottom: 0px solid #dedede !important;
     }
     .custom-button{
@@ -54,7 +44,28 @@ page-recoverypassword {
         font-size: 14px !important;
         color: #23b795;
         text-transform: none;
-        margin-top: 15px;
     }
-    
+    .otp-input-first{
+        border: 2px solid #23b795;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+    }
+    .otp-input-sec{
+        border-top: 2px solid #23b795;
+        border-bottom: 2px solid #23b795;
+        border-right: 2px solid #23b795;
+    }
+    .otp-input-third{
+        border-top: 2px solid #23b795;
+        border-bottom: 2px solid #23b795;
+    }
+    .otp-input-last{
+        border: 2px solid #23b795;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .text-input{
+        text-align: center;
+        font-size: 18px;
+    }
 }

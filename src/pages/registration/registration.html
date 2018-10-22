@@ -1,18 +1,35 @@
 <!--
-  Generated template for the RegistrationPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
+  Created By: Mohd Sanaullah Ghayasi.
+  Dated On: 21-10-2018.
 -->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>registration</ion-title>
+    <ion-title>Create an account</ion-title>
   </ion-navbar>
 
 </ion-header>
 
-
 <ion-content padding>
-
+  <ion-list>
+    <!-- <ion-item class="main-content"> -->
+      <h3>Create an account</h3>
+    <!-- </ion-item> -->
+    <div class="custom-input">
+      <ion-label>Name</ion-label>
+      <input type="text">
+    </div>
+    <div class="custom-input">
+      <ion-label>Email</ion-label>
+      <input type="email">
+    </div>
+    <div class="custom-input">
+      <ion-label>Password</ion-label>
+      <input type="password">
+    </div>
+    <ion-item>
+      <button ion-button full class="custom-button" (click)="userRegister()">CREATE AN ACCOUNT</button>
+      <button ion-button clear class="custom-button-link" (click)="backToLogin()">Already have an account? Start session</button>
+    </ion-item>
+  </ion-list>
 </ion-content>

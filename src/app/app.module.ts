@@ -12,6 +12,7 @@ import { RecoverypasswordPage } from '../pages/recoverypassword/recoverypassword
 import { RecoverypasswordOtpPage } from '../pages/recoverypassword-otp/recoverypassword-otp';
 import { RecoverynewpasswordPage } from '../pages/recoverynewpassword/recoverynewpassword';
 import { RegistrationPage } from '../pages/registration/registration';
+import { RegisterOtpPage } from '../pages/register-otp/register-otp';
 //import { WelcomePage } from '../pages/welcome/welcome';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -41,7 +42,8 @@ firebase.initializeApp(firebaseConfig);
     RecoverypasswordPage,
     RecoverypasswordOtpPage,
     RecoverynewpasswordPage,
-    RegistrationPage
+    RegistrationPage,
+    RegisterOtpPage
   ],
   imports: [
     BrowserModule,
@@ -64,7 +66,8 @@ firebase.initializeApp(firebaseConfig);
     RecoverypasswordPage,
     RecoverypasswordOtpPage,
     RecoverynewpasswordPage,
-    RegistrationPage
+    RegistrationPage,
+    RegisterOtpPage
   ],
   providers: [
     StatusBar,

@@ -6,7 +6,7 @@ import { RecoverynewpasswordPage } from '../recoverynewpassword/recoverynewpassw
 
 /*
   Created By: Mohd Sanaullah Ghayasi.
-  Dated On: 19-02-2018
+  Dated On: 19-10-2018
 */
 
 @Component({

@@ -6,6 +6,7 @@ import { Observable } from 'rxjs/Observable';
 import { GooglePlus } from '@ionic-native/google-plus';
 import { Facebook, FacebookLoginResponse } from '@ionic-native/facebook';
 import { HomePage } from '../../pages/home/home';
+import { RegistrationPage } from '../../pages/registration/registration';
 
 
 //import { TranslateModule } from '@ngx-translate/core';
@@ -86,6 +87,10 @@ export class SlidesPage {
   // This method is used for navigating to home page for login with Email
   loginWithEmail(){
     this.navCtrl.push(HomePage);
+  }
+
+  createAccount(){
+    this.navCtrl.push(RegistrationPage);
   }
 
   
